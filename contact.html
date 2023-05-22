@@ -297,22 +297,22 @@
                                     <div class="row">
                                         <div class="col-xl-6">
                                             <div class="contact-page__form-input-box">
-                                                <input type="text" placeholder="Full Name" name="name">
+                                                <input type="text" placeholder="Full Name" name="name" required>
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="contact-page__form-input-box">
-                                                <input type="email" placeholder="Email Address" name="email">
+                                                <input type="email" placeholder="Email Address" name="email" required>
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="contact-page__form-input-box">
-                                                <input type="text" placeholder="Phone" name="Phone">
+                                                <input type="text" placeholder="Phone" name="Phone" required>
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="contact-page__form-input-box">
-                                                <input type="text" placeholder="Subject" name="Subject">
+                                                <input type="text" placeholder="Subject" name="Subject" required>
                                             </div>
                                         </div>
                                     </div>
@@ -321,7 +321,8 @@
                                             <textarea name="message" placeholder="Write a Message"></textarea>
                                         </div>
                                         <div class="contact-page__btn-box">
-                                            <button type="submit" class="thm-btn contact-page__btn">Send a
+                                            <button onclick="share()" type="submit"
+                                                class="thm-btn contact-page__btn">Send a
                                                 message</button>
                                         </div>
                                     </div>
@@ -505,13 +506,13 @@
         <div class="search-popup__overlay search-toggler"></div>
         <!-- /.search-popup__overlay -->
         <div class="search-popup__content">
-            <form action="#">
-                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+            <!-- <form action="#">
+                <label for="search" class="sr-only">search here</label>
                 <input type="text" id="search" placeholder="Search Here..." />
                 <button type="submit" aria-label="search submit" class="thm-btn">
                     <i class="icon-magnifying-glass"></i>
                 </button>
-            </form>
+            </form> -->
         </div>
         <!-- /.search-popup__content -->
     </div>
@@ -547,6 +548,40 @@
     <script src="assets/vendors/sidebar-content/jquery-sidebar-content.js"></script>
     <script src="assets/vendors/twenty-twenty/twentytwenty.js"></script>
     <script src="assets/vendors/twenty-twenty/jquery.event.move.js"></script>
+
+    <script>
+        // User-defined function to share some message on WhatsApp   
+        function share() {
+
+            // collet the user input   
+            var name = $("input[name=name]").val();
+            var email = $("input[name=email]").val();
+            var phone = $("input[name=Phone]").val();
+            var subject = $("input[name=Subject]").val();
+            var message = $("textarea[name=message]").val();
+
+            var obj = {
+                name: name,
+                email: email,
+                phone: phone,
+                subject: subject,
+                message: message
+            };
+            console.log(obj)
+            if (!obj =="") {
+                // JavaScript function to open URL in new window   
+                window.open("https://wa.me/+917247353393?text=" + " Email = " + obj.email + "%0a Name = " + obj.name + "%0a Phone = " + obj.phone + "%0a Subject = " + obj.subject + "%0a Message = " + obj.message, '_blank');
+
+                share().reset()
+                // name = $("input[name=name]").reset();
+                // email = $("input[name=email]").reset();
+                // phone = $("input[name=Phone]").reset();
+                // subject = $("input[name=Subject]").reset();
+                // message = $("textarea[name=message]").reset();
+            }
+
+        }   
+    </script>
 
 
 
