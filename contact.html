@@ -97,7 +97,7 @@
                                 <a href="#"><i class="fab fa-instagram"></i></a>
                             </div>
                             <div class="main-header__btn-box">
-                                <a href="contact.html" class="thm-btn main-header__btn">Book now</a>
+                                <a href="services.html" class="thm-btn main-header__btn">Book now</a>
                             </div>
                         </div>
                     </div>
@@ -410,8 +410,8 @@
                                 </div>
                                 <ul class="footer-widget__links-list list-unstyled">
                                     <li><a href="services.html">Our Services</a></li>
+                                    <li><a href="about.html">About us</a></li>
                                     <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="about.html">Promotions</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
@@ -560,26 +560,18 @@
             var subject = $("input[name=Subject]").val();
             var message = $("textarea[name=message]").val();
 
-            var obj = {
-                name: name,
-                email: email,
-                phone: phone,
-                subject: subject,
-                message: message
-            };
-            console.log(obj)
-            if (!obj =="") {
-                // JavaScript function to open URL in new window   
-                window.open("https://wa.me/+917247353393?text=" + " Email = " + obj.email + "%0a Name = " + obj.name + "%0a Phone = " + obj.phone + "%0a Subject = " + obj.subject + "%0a Message = " + obj.message, '_blank');
-
-                share().reset()
-                // name = $("input[name=name]").reset();
-                // email = $("input[name=email]").reset();
-                // phone = $("input[name=Phone]").reset();
-                // subject = $("input[name=Subject]").reset();
-                // message = $("textarea[name=message]").reset();
+            if ((name == "") && (email == "") && (phone == "") && (subject == "") && (message == "")) {
+                // alert("Please Fill In All Required Fields");
+                return false;
             }
+            else {
+                // JavaScript function to open URL in new window   
+                window.open("https://wa.me/+917247353393?text=" + "%0a Name = " + name + "%0a Email = " + email +  "%0a phone = " + phone + "%0a subject = " + subject + "%0a Message = " + message, '_blank');
 
+                // name = document.getElementById("name").value = '';
+                // email = document.getElementById("email").value = '';
+                // message = document.getElementById("message").value = '';
+            }
         }   
     </script>
 
