@@ -1131,6 +1131,11 @@
 
 @media (max-width: 767px) {
     .main-header__top {
+        /* display: none; */
+    }
+
+    
+.main-header__top-inner{
         display: none;
     }
 
@@ -1149,6 +1154,7 @@
 
 
     .main-menu-two__wrapper-inner {
+        display: flex;
         padding: 0 20px 0;
     }
 
