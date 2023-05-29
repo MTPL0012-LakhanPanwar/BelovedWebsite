@@ -1,4 +1,7 @@
 /* Medium screen  */
+html {
+    scroll-behavior: smooth;
+  }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .welcome-one__left {
         max-width: 600px;
@@ -251,6 +254,9 @@
 
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .services-two__single {
+        margin-left: 0px;
+    }
     .welcome-one__left {
         max-width: 600px;
         margin: 0 auto 0;
@@ -522,6 +528,9 @@
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
+    .services-two__single {
+        margin-left: 0px;
+    }
     .section-title__title {
         font-size: 30px;
         line-height: 40px;

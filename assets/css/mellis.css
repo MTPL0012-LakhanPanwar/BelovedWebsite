@@ -17,6 +17,10 @@
 /*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --mellis-font: 'Manrope', sans-serif;
   --mellis-font-two: 'Libre Baskerville', serif;
@@ -195,11 +199,20 @@ ul {
   z-index: -1;
 }
 
+.s-section-title {
+  position: relative;
+  display: block;
+  margin-top: -20px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
 .section-title {
   position: relative;
   display: block;
   margin-top: -9px;
-  margin-bottom: 51px;
+  margin-bottom: 50px;
+  margin-left: -100px;
 }
 
 .section-title__tagline {
@@ -2246,7 +2259,7 @@ ul {
 
 .main-slider-two__title {
   position: relative;
-  font-size: 60px;
+  font-size: 50px;
   color: var(--mellis-white);
   font-weight: 400;
   line-height: 72px;
@@ -3506,11 +3519,30 @@ ul {
 .spa-center__btn {
   background-color: var(--mellis-white);
   color: var(--mellis-base);
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none !important;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 14px 49px 14px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  overflow: hidden;
+  letter-spacing: 0.2em;
+  z-index: 1;
 }
-
 
 .spa-center__btn::before {
   background-color: var(--mellis-base);
+  color: var(--mellis-base);
+}
+
+.spa-center__btn:hover{
+  background-color: var(--mellis-black);
   color: var(--mellis-white);
 }
 
@@ -3949,7 +3981,7 @@ ul {
 .footer-widget__links {
   position: relative;
   display: block;
-  margin-left: 70px;
+  margin-left: 15px;
 }
 
 .footer-widget__title-box {
@@ -3991,15 +4023,15 @@ ul {
 .footer-widget__timing {
   position: relative;
   display: block;
-  margin-left: 70px;
-  margin-right: -10px;
+  /* margin-left: 70px;
+  margin-right: -10px; */
 }
 
 .footer-widget__timing-list {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  width: 150px;
+  width: 220px;
 }
 
 .footer-widget__timing-list li {
@@ -4021,7 +4053,7 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 23px;
+  margin: 25px 0px;
 }
 
 .site-footer__social a {
@@ -4387,11 +4419,14 @@ ul {
 }
 
 .feature-one__single-one-content h2 {
-  font-size: 70px;
-  line-height: 70px;
+  padding: 5px;
+  width: fit-content;
+  font-size: 25px;
+  /* line-height: 70px; */
   color: var(--mellis-base);
   margin-top: 7px;
   margin-bottom: 2px;
+  margin-left: 5px;
 }
 
 .feature-one__single-one-content p {
@@ -4532,13 +4567,23 @@ ul {
 .services-two__single {
   position: relative;
   display: block;
-  margin-bottom: 23px;
+    margin-bottom: 23px;
+    margin-left: 230px;
 }
 
 .services-two__title {
-  font-size: 30px;
+  font-size: 26px;
   line-height: 40px;
   margin-bottom: 50px;
+  font-family: var(--mellis-font-two);
+}
+
+.services-two__title a {
+  color: var(--mellis-black);
+}
+
+.services-two__title a:hover {
+  color:  var(--mellis-base);
 }
 
 .services-two__list {
@@ -4552,7 +4597,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  border-bottom: 1px solid var(--mellis-bdr-color);
+  border-bottom: 1px solid var(--mellis-base);
   padding-bottom: 22px;
   margin-bottom: 29px;
 }
@@ -5364,6 +5409,7 @@ ul {
   position: relative;
   display: block;
   background-color: var(--mellis-base);
+  /* background-image: url("/assets/images/images/b-section.png"); */
   padding: 98px 0 48px;
   overflow: hidden;
   z-index: 1;
@@ -5371,9 +5417,9 @@ ul {
 
 .cta-one__shape-1 {
   position: absolute;
-  top: -123px;
+  top: 10px;
   right: 0;
-  opacity: .10;
+  opacity: 2.1;
 }
 
 .cta-one__shape-1 img {
@@ -5390,7 +5436,7 @@ ul {
 }
 
 .cta-one__img img {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
 }
 
@@ -5423,6 +5469,7 @@ ul {
 .cta-one__btn-box {
   position: relative;
   display: block;
+  left: 10px;
 }
 
 .cta-one__btn {
@@ -6635,7 +6682,7 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: .40;
+  /* opacity: .40; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -6763,6 +6810,7 @@ ul {
   display: block;
   padding-bottom: 120px;
   z-index: 1;
+  margin-top: 100px;
 }
 
 .contact-page__left {
@@ -7392,7 +7440,7 @@ ul {
 .services-page {
   position: relative;
   display: block;
-  padding: 120px 0 90px;
+  padding: 0px 0 30px;
   z-index: 1;
 }
 
@@ -9249,8 +9297,10 @@ ul {
   border: none;
 }
 
-
-
+.s-heading {
+  padding-bottom: 60px;
+  color: var(--mellis-black);
+}
 
 
 
