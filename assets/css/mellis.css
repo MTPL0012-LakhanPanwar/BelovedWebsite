@@ -212,7 +212,6 @@ ul {
   display: block;
   margin-top: -9px;
   margin-bottom: 50px;
-  margin-left: -100px;
 }
 
 .section-title__tagline {
@@ -4385,6 +4384,18 @@ ul {
   display: block;
 }
 
+.feature-one__single-two-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-image: -moz-linear-gradient(90deg, rgb(30, 28, 32) 0%, rgba(30, 28, 32, 0) 80%);
+  background-image: -webkit-linear-gradient(90deg, rgb(30, 28, 32) 0%, rgba(30, 28, 32, 0) 80%);
+  background-image: -ms-linear-gradient(90deg, rgb(30, 28, 32) 0%, rgba(30, 28, 32, 0) 80%); */
+}
+
 .feature-one__single-one-img::before {
   content: "";
   position: absolute;
@@ -6996,7 +7007,7 @@ ul {
 .services-details-two__category {
   position: relative;
   display: block;
-  background-color: var(--mellis-extra);
+  background-color: rgba(240, 234, 206, 1);
   padding: 34px 20px 34px;
   margin-bottom: 30px;
 }
@@ -7030,8 +7041,8 @@ ul {
 }
 
 .services-details-two__category-list li.active a {
-  /* background-color: var(--mellis-white); */
-  background-color: var(--mellis-base);
+  background-color: var(--mellis-white);
+  /* background-color: var(--mellis-base); */
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07)
 }
 
@@ -7059,8 +7070,8 @@ ul {
 }
 
 .services-details-two__category-list li.active a i {
-  background-color: var(--mellis-white);
-  color: var(--mellis-base);
+  background-color: var(--mellis-base);
+  color: var(--mellis-white);
 }
 
 
@@ -7168,6 +7179,7 @@ ul {
 .services-details-two__title-2 {
   font-size: 30px;
   line-height: 40px;
+  padding-bottom: 12px;
 }
 
 .services-details-two__text-3 {
@@ -7189,7 +7201,7 @@ ul {
 .services-details-two__points li {
   position: relative;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .services-details-two__points li .icon {
@@ -9302,7 +9314,12 @@ ul {
   color: var(--mellis-black);
 }
 
-
+.service{
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+  margin-top: 50px;
+}
 
 /*--------------------------------------------------------------
 # Boxed Version
