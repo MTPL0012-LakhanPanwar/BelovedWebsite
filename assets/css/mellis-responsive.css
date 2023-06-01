@@ -1,7 +1,8 @@
 /* Medium screen  */
 html {
     scroll-behavior: smooth;
-  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .welcome-one__left {
         max-width: 600px;
@@ -257,6 +258,7 @@ html {
     .services-two__single {
         margin-left: 0px;
     }
+
     .welcome-one__left {
         max-width: 600px;
         margin: 0 auto 0;
@@ -531,6 +533,7 @@ html {
     .services-two__single {
         margin-left: 0px;
     }
+
     .section-title__title {
         font-size: 30px;
         line-height: 40px;
@@ -1121,15 +1124,32 @@ html {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .main-header__top {
+        display: block;
+    }
+
+    .main-header__top-inner {
         display: none;
+    }
+
+    .main-menu-two__wrapper-inner {
+        display: flex;
+        padding: 0 20px 0;
     }
 
     .main-menu-two .mobile-nav__toggler:hover {
         color: var(--mellis-white);
     }
 
+    .main-menu-two .mobile-nav__toggler-one:hover {
+        color: var(--mellis-white);
+    }
+
 
     .main-menu-three .mobile-nav__toggler:hover {
+        color: var(--mellis-white);
+    }
+
+    .main-menu-three .mobile-nav__toggler-one:hover {
         color: var(--mellis-white);
     }
 }
@@ -1143,8 +1163,8 @@ html {
         /* display: none; */
     }
 
-    
-.main-header__top-inner{
+
+    .main-header__top-inner {
         display: none;
     }
 
@@ -1157,6 +1177,10 @@ html {
     }
 
     .main-menu .mobile-nav__toggler {
+        padding: 35px 0;
+    }
+
+    .main-menu .mobile-nav__toggler-one {
         padding: 35px 0;
     }
 
@@ -1175,6 +1199,9 @@ html {
         color: var(--mellis-white);
     }
 
+    .main-menu-two .mobile-nav__toggler-one:hover {
+        color: var(--mellis-white);
+    }
 
 
     .main-menu-three .mobile-nav__toggler:hover {
@@ -1185,7 +1212,13 @@ html {
         padding: 22px 0;
     }
 
+    .main-menu-three .mobile-nav__toggler-one:hover {
+        color: var(--mellis-white);
+    }
 
+    .main-menu-three .mobile-nav__toggler-one {
+        padding: 22px 0;
+    }
 
 
 

@@ -1227,12 +1227,30 @@ ul {
   transition: 500ms;
 }
 
+.main-menu .mobile-nav__toggler-one {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  color: var(--mellis-base);
+  cursor: pointer;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
 .main-menu .mobile-nav__toggler:hover {
+  color: var(--mellis-black);
+}
+
+.main-menu .mobile-nav__toggler-one:hover {
   color: var(--mellis-black);
 }
 
 @media (min-width: 1200px) {
   .main-menu .mobile-nav__toggler {
+    display: none;
+  }
+
+  .main-menu .mobile-nav__toggler-one {
     display: none;
   }
 }
