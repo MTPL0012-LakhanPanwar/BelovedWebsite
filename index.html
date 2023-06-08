@@ -54,15 +54,10 @@
 
 <body>
 
-
-
     <div class="preloader">
         <div class="preloader__image"></div>
     </div>
     <!-- /.preloader -->
-
-
-
 
     <div class="page-wrapper">
         <header class="main-header-two">
@@ -96,8 +91,8 @@
                                         class="fab fa-twitter"></i></a>
                                 <a href="https://www.facebook.com/profile.php?id=100092866846105&mibextid=ZbWKwL"
                                     target="_blank"><i class="fab fa-facebook"></i></a>
-                                <a href="https://www.tiktok.com/@belovedbeauty4?_t=8cj1RbVX31r&_r=1" target="_blank"><i
-                                        class="fab fa-tiktok"></i></a>
+                                <a href="https://www.tiktok.com/@belovedbeauty4?_t=8cj1RbVX31r&_r=1" target="_blank">
+                                    <i class="fab fa-tiktok"></i></a>
                                 <a href="https://instagram.com/belovedbeautysalon1?igshid=NTc4MTIwNjQ2YQ=="
                                     target="_blank"><i class="fab fa-instagram"></i></a>
                             </div>
@@ -239,23 +234,15 @@
                         </div>
                     </div>
 
-
-
                 </div>
 
                 <div class="swiper-pagination" id="main-slider-pagination"></div>
                 <!-- If we need navigation buttons -->
 
-
             </div>
         </section>
         <!--Main Slider End-->
-        <div class="whatsapp-btn-container">
-            <a class="whatsapp-btn" href="https://wa.me/+971561343131?text= Hello, Beloved" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <span>Message Us</span>
-        </div>
+
         <!--About One Start-->
         <section class="about-one">
             <div class="container">
@@ -577,33 +564,78 @@
         <!--Why Choose One End-->
 
         <!--CTA One Start-->
-        <section class="cta-one">
-            <div class="cta-one__img">
-                <img src="assets/images/img-test/10.jpg" alt="">
-            </div>
+        <section class="cta-one" style="display: flex; justify-content: space-around;">
             <div class="cta-one__shape-1 float-bob-y">
-                <img src="assets/images/images/b-section.png" alt="">
+                <!-- <img src="assets/images/images/b-section.png" alt=""> -->
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-xl-9">
                         <div class="cta-one__left">
-                            <div class="section-title text-left">
+                            <!-- <div class="section-title text-left">
                                 <span class="section-title__tagline">Book our services</span>
                                 <h2 class="section-title__title">Need to Relax? Want a Recharge?</h2>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="col-xl-3">
-                        <div class="cta-one__right">
-                            <div class="cta-one__btn-box">
+                    <div class="col-xl-9">
+                        <div class="cta-two__right">
+                            <!-- <div class="cta-one__btn-box">
                                 <div class="cta-one__btn-box">
 
                                     <a aria-label="Chat on WhatsApp"
                                         href="https://wa.me/+971561343131?text= Hello, Beloved" target="_blank"
                                         class="thm-btn spa-center__btn-one">Book Services</a>
                                 </div>
-                            </div>
+                            </div> -->
+                            <form action="assets/inc/sendemail.php"
+                                        class="contact-page__form contact-form-validated" novalidate="novalidate">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="contact-page__form-input-box">
+                                                    <input type="text" placeholder="Full Name" name="name" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="contact-page__form-input-box">
+                                                    <input type="email" placeholder="Email Address" name="email"
+                                                        required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-6">
+                                                <div class="contact-page__form-input-box">
+                                                    <select class="drop-list" name="meal" id="meal"
+                                                        onChange="changecat(this.value);">
+                                                        <option value="" disabled selected>Select</option>
+                                                        <option value="A">A</option>
+                                                        <option value="B">B</option>
+                                                        <option value="C">C</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="contact-page__form-input-box">
+                                                    <select class="drop-list" name="category" id="category">
+                                                        <option value="" disabled selected>Select</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-xl-6">
+                                                            <div class="contact-page__form-input-box">
+                                                                <input type="number" placeholder="Phone" name="Phone"
+                                                                    required>
+                                                            </div>
+                                                        </div> -->
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="contact-page__btn-box">
+                                                <button onclick="share()" type="submit"
+                                                    class="thm-btn spa-center__btn-one"
+                                                    style="border: none;">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
                         </div>
                     </div>
                 </div>
@@ -749,6 +781,31 @@
 
     </div>
 
+    <div class="social-btn-container">
+        <a class="twitter-btn" href="https://twitter.com/salon_beloved" target="_blank">
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+
+        <a class="tiktok-btn" href="https://www.tiktok.com/@belovedbeauty4?_t=8cj1RbVX31r&_r=1" target="_blank">
+            <i class="fab fa-tiktok"></i></a>
+        </a>
+
+        <a class="instagram-btn" href="https://instagram.com/belovedbeautysalon1?igshid=NTc4MTIwNjQ2YQ=="
+            target="_blank">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+
+        <a class="facebook-btn" href="https://www.facebook.com/profile.php?id=100092866846105&mibextid=ZbWKwL"
+            target="_blank">
+            <i class="fab fa-facebook" aria-hidden="true"></i>
+        </a>
+
+        <a class="whatsapp-btn" href="https://wa.me/+971561343131?text= Hello, Beloved" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+    </div>
+
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
     <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
@@ -780,30 +837,26 @@
     <script src="assets/vendors/twenty-twenty/jquery.event.move.js"></script>
 
     <!-- template js -->
-    <script src="assets/js//mellis.js"></script>
+    <script src="assets/js//mellis.js"></script>]
 
-    <!-- custom whatsapp  -->
-    <!-- <script>
-        setTimeout(() => {
-            const box = document.getElementById('box');
+    <script>
+        var mealsByCategory = {
+            A: ["Soup", "Juice", "Tea", "Others"],
+            B: ["Soup", "Juice", "Water", "Others"],
+            C: ["Soup", "Juice", "Coffee", "Tea", "Others"]
+        }
 
-            // 👇️ removes element from DOM
-            box.style.display = 'inline';
-
-            // 👇️ hides element (still takes up space on page)
-            // box.style.visibility = 'hidden';
-        }, 4000);
-
-        // function myFunction() {
-        //     const id = document.getElementById('box');
-        //     if (id.style.display === "none") {
-        //         id.style.display = "inline";
-        //     } else {
-        //         id.style.display = "none";
-        //     }
-        // }
-
-    </script> -->
+        function changecat(value) {
+            if (value.length == 0) document.getElementById("category").innerHTML = "<option></option>";
+            else {
+                var catOptions = "";
+                for (categoryId in mealsByCategory[value]) {
+                    catOptions += "<option>" + mealsByCategory[value][categoryId] + "</option>";
+                }
+                document.getElementById("category").innerHTML = catOptions;
+            }
+        }
+    </script>
 </body>
 
 </html>
