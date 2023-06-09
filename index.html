@@ -97,7 +97,7 @@
                                     target="_blank"><i class="fab fa-instagram"></i></a>
                             </div>
                             <div class="main-header__btn-box">
-                                <a href="https://wa.me/+971561343131?text= Hello, Beloved" target="_blank"
+                                <a href="https://wa.me/+971561343131?text= Hi Beloved Beauty Salon," target="_blank"
                                     class="thm-btn main-header__btn">Book now</a>
                             </div>
                         </div>
@@ -113,7 +113,7 @@
                                 </div>
                             </div>
                             <div class="main-menu-two__main-menu-box" style="display: flex; gap: 20px;">
-                                <a href="https://wa.me/+971561343131?text= Hello, Beloved" target="_blank"
+                                <a href="https://wa.me/+971561343131?text= Hi Beloved Beauty Salon," target="_blank"
                                     class="mobile-nav__toggler-one"><img style="width: 25px; margin-top: -3px"
                                         src="assets/images/images/book-icon-1.svg" alt=""></a>
                                 <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
@@ -361,8 +361,9 @@
                             <br> True Splendor
                         </h3>
                         <div class="spa-center__btn-box">
-                            <a aria-label="Chat on WhatsApp" href="https://wa.me/+971561343131?text= Hello, Beloved "
-                                target="_blank" class="thm-btn spa-center__btn">Book Now</a>
+                            <a aria-label="Chat on WhatsApp"
+                                href="https://wa.me/+971561343131?text= Hi Beloved Beauty Salon, " target="_blank"
+                                class="thm-btn spa-center__btn">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -564,78 +565,66 @@
         <!--Why Choose One End-->
 
         <!--CTA One Start-->
-        <section class="cta-one" style="display: flex; justify-content: space-around;">
-            <div class="cta-one__shape-1 float-bob-y">
-                <!-- <img src="assets/images/images/b-section.png" alt=""> -->
-            </div>
-            <div class="container">
+        <section class="cta-two">
+            <div class="containers">
                 <div class="row">
-                    <div class="col-xl-9">
-                        <div class="cta-one__left">
-                            <!-- <div class="section-title text-left">
-                                <span class="section-title__tagline">Book our services</span>
-                                <h2 class="section-title__title">Need to Relax? Want a Recharge?</h2>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-xl-9">
-                        <div class="cta-two__right">
-                            <!-- <div class="cta-one__btn-box">
-                                <div class="cta-one__btn-box">
+                    <div class="col-xl-12">
 
-                                    <a aria-label="Chat on WhatsApp"
-                                        href="https://wa.me/+971561343131?text= Hello, Beloved" target="_blank"
-                                        class="thm-btn spa-center__btn-one">Book Services</a>
+                        <div class="cta-one__right">
+                            <h2 class="appoint-title">Book an Appointment</h2>
+                            <form action="assets/inc/sendemail.php" class="home-page__form contact-form-validated"
+                                novalidate="novalidate">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="contact-page__form-input-box">
+                                            <input type="text" placeholder="Full Name" name="name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="contact-page__form-input-box">
+                                            <input type="date" placeholder="Date" name="date" min={new
+                                                Date().toISOString().split('T')[0]} required />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-6">
+                                        <div class="contact-page__form-input-box">
+                                            <div>
+                                                <select class="drop-list" name="meal" id="meal"
+                                                    onChange="changecat(this.value);">
+                                                    <option value="" disabled selected>Select</option>
+                                                    <option value="main">Main service</option>
+                                                    <option value="Hair">Hair</option>
+                                                    <option value="Colour">Hair colour</option>
+                                                    <option value="Bleaching">Bleaching</option>
+                                                    <option value="Cuts">Hair Cuts</option>
+                                                    <option value="Make">Make up</option>
+                                                    <option value="Facial">Facial</option>
+                                                    <option value="Waxing">Waxing</option>
+                                                    <option value="Nails">Nails</option>
+                                                    <option value="Henna">Henna</option>
+                                                    <option value="Thereading">Thereading</option>
+                                                    <option value="Eyelashes">Eyelashes</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="contact-page__form-input-box">
+                                            <select class="drop-list" name="category" id="category">
+                                                <option value="" disabled selected>Select</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
                                 </div>
-                            </div> -->
-                            <form action="assets/inc/sendemail.php"
-                                        class="contact-page__form contact-form-validated" novalidate="novalidate">
-                                        <div class="row">
-                                            <div class="col-xl-6">
-                                                <div class="contact-page__form-input-box">
-                                                    <input type="text" placeholder="Full Name" name="name" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="contact-page__form-input-box">
-                                                    <input type="email" placeholder="Email Address" name="email"
-                                                        required>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xl-6">
-                                                <div class="contact-page__form-input-box">
-                                                    <select class="drop-list" name="meal" id="meal"
-                                                        onChange="changecat(this.value);">
-                                                        <option value="" disabled selected>Select</option>
-                                                        <option value="A">A</option>
-                                                        <option value="B">B</option>
-                                                        <option value="C">C</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <div class="contact-page__form-input-box">
-                                                    <select class="drop-list" name="category" id="category">
-                                                        <option value="" disabled selected>Select</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <!-- <div class="col-xl-6">
-                                                            <div class="contact-page__form-input-box">
-                                                                <input type="number" placeholder="Phone" name="Phone"
-                                                                    required>
-                                                            </div>
-                                                        </div> -->
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <div class="contact-page__btn-box">
-                                                <button onclick="share()" type="submit"
-                                                    class="thm-btn spa-center__btn-one"
-                                                    style="border: none;">Submit</button>
-                                            </div>
-                                        </div>
-                                    </form>
+                                <div class="col-xl-12">
+                                    <div class="spa-center__btn-box">
+                                        <button onclick="share()" type="submit" class="thm-btn spa-center__btn-one"
+                                            style="border: none;">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -781,7 +770,7 @@
 
     </div>
 
-    <div class="social-btn-container">
+    <!-- <div class="social-btn-container">
         <a class="twitter-btn" href="https://twitter.com/salon_beloved" target="_blank">
             <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
@@ -800,63 +789,197 @@
             <i class="fab fa-facebook" aria-hidden="true"></i>
         </a>
 
-        <a class="whatsapp-btn" href="https://wa.me/+971561343131?text= Hello, Beloved" target="_blank">
+        <a class="whatsapp-btn" href="https://wa.me/+971561343131?text= Hi Beloved Beauty Salon," target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
 
+    </div> -->
+
+    <!-- <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+     -->
+
+    <div class="social-btn-container">
+        <a href="#" class="floatingButton">
+            <i class="fa fa-angle-up">
+        </a>
+        <ul class="floatingMenu">
+            <li>
+                <a class="twitter-btn" href="https://twitter.com/salon_beloved" target="_blank">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="tiktok-btn" href="https://www.tiktok.com/@belovedbeauty4?_t=8cj1RbVX31r&_r=1" target="_blank">
+                    <i class="fab fa-tiktok"></i></a>
+                </a>
+            </li>
+            <li>
+                <a class="instagram-btn" href="https://instagram.com/belovedbeautysalon1?igshid=NTc4MTIwNjQ2YQ=="
+                    target="_blank">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="facebook-btn" href="https://www.facebook.com/profile.php?id=100092866846105&mibextid=ZbWKwL"
+                    target="_blank">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="whatsapp-btn" href="https://wa.me/+971561343131?text= Hi Beloved Beauty Salon,"
+                    target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
+
+        </ul>
     </div>
 
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
-    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
-    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
-    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
-    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
-    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
-    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
-    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
-    <script src="assets/vendors/odometer/odometer.min.js"></script>
-    <script src="assets/vendors/swiper/swiper.min.js"></script>
-    <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
-    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
-    <script src="assets/vendors/wow/wow.js"></script>
-    <script src="assets/vendors/isotope/isotope.js"></script>
-    <script src="assets/vendors/countdown/countdown.min.js"></script>
-    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
-    <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
-    <script src="assets/vendors/vegas/vegas.min.js"></script>
-    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
-    <script src="assets/vendors/timepicker/timePicker.js"></script>
-    <script src="assets/vendors/circleType/jquery.circleType.js"></script>
-    <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
-    <script src="assets/vendors/sidebar-content/jquery-sidebar-content.js"></script>
-    <script src="assets/vendors/twenty-twenty/twentytwenty.js"></script>
-    <script src="assets/vendors/twenty-twenty/jquery.event.move.js"></script>
+    <ion-fab horizontal="center" vertical="top" slot="fixed">
+        <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+        <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+        <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+        <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+        <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+        <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+        <script src="assets/vendors/odometer/odometer.min.js"></script>
+        <script src="assets/vendors/swiper/swiper.min.js"></script>
+        <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
+        <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+        <script src="assets/vendors/wow/wow.js"></script>
+        <script src="assets/vendors/isotope/isotope.js"></script>
+        <script src="assets/vendors/countdown/countdown.min.js"></script>
+        <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
+        <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
+        <script src="assets/vendors/vegas/vegas.min.js"></script>
+        <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+        <script src="assets/vendors/timepicker/timePicker.js"></script>
+        <script src="assets/vendors/circleType/jquery.circleType.js"></script>
+        <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
+        <script src="assets/vendors/sidebar-content/jquery-sidebar-content.js"></script>
+        <script src="assets/vendors/twenty-twenty/twentytwenty.js"></script>
+        <script src="assets/vendors/twenty-twenty/jquery.event.move.js"></script>
 
-    <!-- template js -->
-    <script src="assets/js//mellis.js"></script>]
+        <!-- template js -->
+        <script src="assets/js//mellis.js"></script>]
 
-    <script>
-        var mealsByCategory = {
-            A: ["Soup", "Juice", "Tea", "Others"],
-            B: ["Soup", "Juice", "Water", "Others"],
-            C: ["Soup", "Juice", "Coffee", "Tea", "Others"]
-        }
+        <script>
+            var mealsByCategory = {
+                main: ["Hair Rebounding", "Hair Straightening", "Keratin Treatment",
+                    "Protein Hairs", "Hot Oil Massage", "Hair Spa Massage", "Blow Dry (LONG)", "Medium"],
 
-        function changecat(value) {
-            if (value.length == 0) document.getElementById("category").innerHTML = "<option></option>";
-            else {
-                var catOptions = "";
-                for (categoryId in mealsByCategory[value]) {
-                    catOptions += "<option>" + mealsByCategory[value][categoryId] + "</option>";
-                }
-                document.getElementById("category").innerHTML = catOptions;
+                Hair: ["Short", "Hair Wash", "Botox", "Hairs Style", "Roots Colour",
+                    "Long Hair", "Medium Hair", "Short Hair", "Cellophane (L,M,S)"],
+
+                Colour: ["Highlights", "Apply Colours", "Crazy Colours (L,M,S)", "Rinsage", "Balayage",
+                    "Hair Colours + highlights", "Steps or layers cut", "Straight cut", "U-Shape"],
+
+                Bleaching: ["Full Body bleach", "Bikini Whitening", "Under Arms Whitening", "Whitening Facial",
+                    "Anti - Aging (Lifting Facial)", "Anti - Pigmentation", "Anti - Oxygen (Dehydrated Skin)", "Anti - Pimple", "Sensitive Skin"],
+
+                Cuts: ["baby cut", "front cut", "trimming", "face bleach", "full hand bleach", "full leg bleach"],
+
+                Make: ["Party Make Up", "Bride Make Up", "Half Hand Waxing", "Half Legs Waxing",
+                    "Full Hand Waxing", "Full Leg Waxing", "Under Arm Waxing", "Full Back Waxing"],
+
+                Facial: ["Anti - Dry Skin", "Clean Up", "Face Mask", "Skin - Polishing", "Ear Piercing", "Normal Make",],
+
+                Waxing: ["Full Chest Waxing", "Bikini Waxing", "Face Waxing", "Full Body Waxing",
+                    "Upper Lip Chin", "Nose Waxing", "Full Face",
+                    "Full Hand Bleach", "Full Leg Bleach"],
+
+                Nails: ["Nail Extension Acrylic / Gel", "Nail Design (Each Finger)", "Apply Polish", "Fixing Extension", "Removing Gel Extension W/ Manicure",
+                    "Foot Spa with Massage + Scrub", "refill Gel or Acrylic Extension", "Overlay", "Nail Fix", "Eyelashes Refil", "Eyelashes 3 in 1",
+                ],
+                Henna: ["Henna Eye Brow", "Eyebrow Lamination", "Normal Manicure", "Normal Pedicure", "Normal Pedicure With Foot Spa",
+                    "French Manicure", "French Pedicure", "Apply Gelish For Hands", "Apply Gelish For Foot", "Gelish Manicure", "Gelish Pedicure",
+                ],
+
+                Thereading: ["Full Body Bleach", "Bikini Whitening", "Small Design", "Medium Design", "Large Design"],
+                Eyelashes: ["Eyelashes One by One", "Eyelash lifting"]
             }
-        }
-    </script>
+
+            function changecat(value) {
+                if (value.length == 0) document.getElementById("category").innerHTML = "<option></option>";
+                else {
+                    var catOptions = "";
+                    for (categoryId in mealsByCategory[value]) {
+                        catOptions += "<option>" + mealsByCategory[value][categoryId] + "</option>";
+                    }
+                    document.getElementById("category").innerHTML = catOptions;
+                }
+            }
+        </script>
+
+        <script>
+            // User-defined function to share some message on WhatsApp   
+            function share() {
+
+                // collet the user input   
+                var name = $("input[name=name]").val();
+                var date = $("input[name=date]").val();
+                var category = $("select[name=meal]").val();
+                var service = $("select[name=category]").val();
+
+                if ((name == "") && (date == "") && (category == "") && (service == "")) {
+                    // alert("Please Fill In All Required Fields");
+                    return false;
+                }
+                else {
+                    // JavaScript function to open URL in new window   Name+%3D+name%2C%0D%0ACategory+%3D+category%2C%0D%0AService+%3D++service%2C%0D%0ADate+%3D++date
+                    window.open("https://wa.me/+971561343131?text=" + "++Hi+Beloved+Beauty+Salon%2C%0D%0A%0D%0AI+am+" + name + "%2C+am+interested+in+" + category +"+"+ service + "%2C+and+would+like+to+book+an+appointment+for+" + date);
+
+                }
+            }   
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $('.floatingButton').on('click',
+                    function (e) {
+                        e.preventDefault();
+                        $(this).toggleClass('open');
+                        if ($(this).children('.fa').hasClass('fa-plus')) {
+                            $(this).children('.fa').removeClass('fa-plus');
+                            $(this).children('.fa').addClass('fa-close');
+                        }
+                        else if ($(this).children('.fa').hasClass('fa-close')) {
+                            $(this).children('.fa').removeClass('fa-close');
+                            $(this).children('.fa').addClass('fa-plus');
+                        }
+                        $('.floatingMenu').stop().slideToggle();
+                    }
+                );
+                $(this).on('click', function (e) {
+
+                    var container = $(".floatingButton");
+                    // if the target of the click isn't the container nor a descendant of the container
+                    if (!container.is(e.target) && $('.floatingButtonWrap').has(e.target).length === 0) {
+                        if (container.hasClass('open')) {
+                            container.removeClass('open');
+                        }
+                        if (container.children('.fa').hasClass('fa-close')) {
+                            container.children('.fa').removeClass('fa-close');
+                            container.children('.fa').addClass('fa-plus');
+                        }
+                        $('.floatingMenu').hide();
+                    }
+
+                    // if the target of the click isn't the container and a descendant of the menu
+                    if (!container.is(e.target) && ($('.floatingMenu').has(e.target).length > 0)) {
+                        $('.floatingButton').removeClass('open');
+                        $('.floatingMenu').stop().slideToggle();
+                    }
+                });
+            });
+
+        </script>
+
 </body>
 
 </html>

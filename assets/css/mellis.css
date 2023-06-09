@@ -144,9 +144,17 @@ ul {
   overflow: hidden;
 }
 
-.container {
+.container .containers{
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.container .containers{
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  /* margin-right: auto; */
+  margin-left: auto;
 }
 
 .list-unstyled {
@@ -156,6 +164,10 @@ ul {
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
+  }
+  .containers {
+    max-width: 1200px;
+    margin-left: 37%
   }
 }
 
@@ -238,15 +250,23 @@ ul {
   text-transform: uppercase;
 }
 
-
-
-
 .section-title__title {
   margin: 0;
   color: var(--mellis-black);
   font-size: 44px;
   line-height: 49px;
   margin-top: 5px;
+}
+
+.appoint-title {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--mellis-black);
+  font-size: 40px;
+  line-height: 49px;
+  margin: 0px 0px 50px;
+  justify-content: center;
+  font-family: var(--mellis-font-two);
 }
 
 .thm-btn {
@@ -5583,14 +5603,25 @@ ul {
 /*--------------------------------------------------------------
 # CTA One
 --------------------------------------------------------------*/
-.cta-one {
+.cta-two {
   position: relative;
-  display: block;
+  display: flex;
   background-color: var(--mellis-base);
   background-image: url("/assets/images/images/Book-APT.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  padding: 98px 0 48px;
+  padding: 75px 18px 72px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cta-one {
+  position: relative;
+  display: flex;
+  background-color: var(--mellis-base);
+  /* background-image: url("/assets/images/images/Book-APT.png"); */
+  background-repeat: no-repeat;
+  padding: 100px 0 48px;
   overflow: hidden;
   z-index: 1;
 }
@@ -5642,7 +5673,7 @@ ul {
 .cta-one__right {
   position: relative;
   display: block;
-  margin-left: 47px;
+  margin-left: 48px;
   margin-top: 6px;
 }
 
@@ -6729,7 +6760,9 @@ ul {
 }
 
 .contact-one__form-input-box input[type="text"],
-.contact-one__form-input-box input[type="email"]{
+.contact-one__form-input-box input[type="email"],
+.contact-page__form-input-box input[type="number"],
+.contact-page__form-input-box input[type="date"]{
   height: 58px;
   width: 100%;
   border: none;
@@ -7116,6 +7149,12 @@ ul {
   display: block;
 }
 
+.home-page__form {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
 .contact-page__form-input-box {
   position: relative;
   display: block;
@@ -7124,7 +7163,8 @@ ul {
 
 .contact-page__form-input-box input[type="text"],
 .contact-page__form-input-box input[type="email"],
-.contact-page__form-input-box input[type="number"] {
+.contact-page__form-input-box input[type="number"],
+.contact-page__form-input-box input[type="date"] {
   height: 58px;
   width: 100%;
   border: none;
@@ -7148,6 +7188,19 @@ ul {
   font-size: 14px;
   color: var(--mellis-gray);
   display: block;
+}
+
+.drop-list option{
+  /* background-color: rgba(240, 234, 206, 1); */
+  color: #000000 ;
+  padding: 30px 15px;
+  font-size: 16px;
+  font-family: var(--mellis-font-two);
+}
+
+.drop-list option :hover{
+  background-color: #000000 !important;
+  color: #ffffff !important;
 }
 
 .contact-page__form-input-box textarea {
@@ -9516,7 +9569,9 @@ ul {
 }
 
 .review-form-one__input-box input[type="text"],
-.review-form-one__input-box input[type="email"] {
+.review-form-one__input-box input[type="email"],
+.contact-page__form-input-box input[type="number"],
+.contact-page__form-input-box input[type="date"] {
   height: 58px;
   width: 100%;
   border: none;
@@ -9588,6 +9643,8 @@ ul {
   color: #ffffff;
   transition: all 400ms;
   border-radius: 50%;
+  bottom: -6px;
+  right: -4px;
 }
 
 .social-btn-container a:hover {
@@ -9873,3 +9930,99 @@ ul {
 /*--------------------------------------------------------------
 # Boxed Version
 --------------------------------------------------------------*/
+
+
+.floatingButtonWrap {
+  display: block;
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+  z-index: 999999999;
+}
+
+.floatingButtonInner {
+  position: relative;
+}
+
+.whatsapp-btn-container .whatsapp-btn {
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d8c36b;
+  color: #ffffff;
+  transition: all 400ms;
+  border-radius: 50%;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover {
+  transform: scale(1);
+  color: #3c3c3c;
+}
+
+.floatingButton {
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background-color: #d8c36b;
+  color: #fff;
+  line-height: 50px;
+  position: absolute;
+  border-radius: 50% 50%;
+  bottom: 0px;
+  right: 0px;
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.floatingButton .fa {
+  font-size: 15px !important;
+}
+
+.floatingButton.open,
+.floatingButton:hover,
+.floatingButton:focus,
+.floatingButton:active {
+  opacity: 1;
+  color: #fff;
+}
+
+
+.floatingButton .fa {
+  transform: rotate(0deg);
+  transition: all 0.4s;
+}
+
+.floatingButton.open .fa {
+  transform: rotate(270deg);
+}
+
+.floatingMenu {
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+  display: block;
+}
+
+.floatingMenu li {
+  width: 100%;
+  float: right;
+  list-style: none;
+  text-align: right;
+  margin-bottom: 14px;
+}
+
+.floatingMenu li a {
+  display: flex;
+  justify-content: center;
+  background-color: #d8c36b;
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.4s;
+  align-items: center;
+}
+

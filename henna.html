@@ -97,7 +97,7 @@
                                     target="_blank"><i class="fab fa-instagram"></i></a>
                             </div>
                             <div class="main-header__btn-box">
-                                <a href="https://wa.me/+971561343131?text= Hello, Beloved " target="_blank"
+                                <a href="https://wa.me/+971561343131?text= Hi Beloved Beauty Salon, " target="_blank"
                                     class="thm-btn main-header__btn">Book now</a>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
                             </div>
                         </div>
                         <div class="main-menu__main-menu-box" style="display: flex; gap: 20px;">
-                            <a href="https://wa.me/+971561343131?text= Hello, Beloved" target="_blank"
+                            <a href="https://wa.me/+971561343131?text= Hi Beloved Beauty Salon," target="_blank"
                                 class="mobile-nav__toggler-one"><img style="width: 25px; margin-top: -3px"
                                     src="assets/images/images/book-icon.svg" alt=""></a>
                             <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
@@ -200,7 +200,7 @@
                                 <div class="services-details-two__help-line-content">
                                     <div class="services-details-two__help-line-icon">
                                         <a class="icon-telephone-call"
-                                            href="https://wa.me/+971561343131?text= Hello Beloved Salon, I am interested in your Henna services, I want to connect with you to experience it"
+                                            href="https://wa.me/+971561343131?text= Hi Beloved Beauty Salon, I am interested in your Henna services, I want to connect with you to experience it"
                                             target="_blank"></a>
                                     </div>
                                     <p class="services-details-two__help-line-sub-title">Book for You</p>
@@ -354,8 +354,8 @@
                                 <div class="cta-one__btn-box">
 
                                     <a aria-label="Chat on WhatsApp"
-                                        href="https://wa.me/+971561343131?text= Hello, Beloved" target="_blank"
-                                        class="thm-btn spa-center__btn-one">Book Services</a>
+                                        href="https://wa.me/+971561343131?text= Hi Beloved Beauty Salon,"
+                                        target="_blank" class="thm-btn spa-center__btn-one">Book Services</a>
                                 </div>
                             </div>
                         </div>
@@ -516,31 +516,41 @@
     <!-- /.search-popup -->
 
     <div class="social-btn-container">
-        <a class="twitter-btn" href="https://twitter.com/salon_beloved" target="_blank">
-            <i class="fab fa-twitter" aria-hidden="true"></i>
+        <a href="#" class="floatingButton">
+            <i class="fa fa-angle-up">
         </a>
+        <ul class="floatingMenu">
+            <li>
+                <a class="twitter-btn" href="https://twitter.com/salon_beloved" target="_blank">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="tiktok-btn" href="https://www.tiktok.com/@belovedbeauty4?_t=8cj1RbVX31r&_r=1" target="_blank">
+                    <i class="fab fa-tiktok"></i></a>
+                </a>
+            </li>
+            <li>
+                <a class="instagram-btn" href="https://instagram.com/belovedbeautysalon1?igshid=NTc4MTIwNjQ2YQ=="
+                    target="_blank">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="facebook-btn" href="https://www.facebook.com/profile.php?id=100092866846105&mibextid=ZbWKwL"
+                    target="_blank">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="whatsapp-btn" href="https://wa.me/+971561343131?text= Hi Beloved Beauty Salon,"
+                    target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
 
-        <a class="tiktok-btn" href="https://www.tiktok.com/@belovedbeauty4?_t=8cj1RbVX31r&_r=1" target="_blank">
-            <i class="fab fa-tiktok"></i></a>
-        </a>
-
-        <a class="instagram-btn" href="https://instagram.com/belovedbeautysalon1?igshid=NTc4MTIwNjQ2YQ=="
-            target="_blank">
-            <i class="fab fa-instagram" aria-hidden="true"></i>
-        </a>
-
-        <a class="facebook-btn" href="https://www.facebook.com/profile.php?id=100092866846105&mibextid=ZbWKwL"
-            target="_blank">
-            <i class="fab fa-facebook" aria-hidden="true"></i>
-        </a>
-
-        <a class="whatsapp-btn" href="https://wa.me/+971561343131?text= Hello, Beloved" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-
+        </ul>
     </div>
-
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
 
     <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
@@ -573,6 +583,47 @@
 
     <!-- template js -->
     <script src="assets/js//mellis.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.floatingButton').on('click',
+                function (e) {
+                    e.preventDefault();
+                    $(this).toggleClass('open');
+                    if ($(this).children('.fa').hasClass('fa-plus')) {
+                        $(this).children('.fa').removeClass('fa-plus');
+                        $(this).children('.fa').addClass('fa-close');
+                    }
+                    else if ($(this).children('.fa').hasClass('fa-close')) {
+                        $(this).children('.fa').removeClass('fa-close');
+                        $(this).children('.fa').addClass('fa-plus');
+                    }
+                    $('.floatingMenu').stop().slideToggle();
+                }
+            );
+            $(this).on('click', function (e) {
+
+                var container = $(".floatingButton");
+                // if the target of the click isn't the container nor a descendant of the container
+                if (!container.is(e.target) && $('.floatingButtonWrap').has(e.target).length === 0) {
+                    if (container.hasClass('open')) {
+                        container.removeClass('open');
+                    }
+                    if (container.children('.fa').hasClass('fa-close')) {
+                        container.children('.fa').removeClass('fa-close');
+                        container.children('.fa').addClass('fa-plus');
+                    }
+                    $('.floatingMenu').hide();
+                }
+
+                // if the target of the click isn't the container and a descendant of the menu
+                if (!container.is(e.target) && ($('.floatingMenu').has(e.target).length > 0)) {
+                    $('.floatingButton').removeClass('open');
+                    $('.floatingMenu').stop().slideToggle();
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>
